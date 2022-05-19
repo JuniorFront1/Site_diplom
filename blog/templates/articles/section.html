@@ -66,8 +66,10 @@
         <div class='comments__block'>
             <div class='comments__item-info'>
                 <div style="background-color: {{comment.icon_color}}; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center;">{{comment.comment_name|first}}</div>
-                <div class='comments__item-name'>{{comment.comment_name}}</div>
-                <div class='comments__item-email'>{{comment.comment_email}}</div>
+                <div class='comments__item-mobile'>
+                    <div class='comments__item-name'>{{comment.comment_name}}</div>
+                    <div class='comments__item-email'>{{comment.comment_email}}</div>
+                </div>
             </div>
             <div class='comments__item-block'>
                 <div class='comments__item-date'>{{comment.comment_date}}</div>

@@ -210,4 +210,7 @@
         justify-content: space-around;
         align-items: center;
     }
+    .menu-button{
+        display: none;
+    }
 }

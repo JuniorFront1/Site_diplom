@@ -53,11 +53,6 @@
     gap: 30px;
 }
 
-.blocks__item-image--row {
-    width: 100%;
-    max-height: 400px;
-}
-
 .blocks__item-data {
     margin: 10px 0 20px 0;
 }
@@ -86,6 +81,7 @@
     font-weight: 700;
 }
 
+
 @media (max-width: 1024px) {
     .container {
         margin: 0 20px;
@@ -99,9 +95,21 @@
 
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px){
+    .container{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
     .blocks__item--row {
         grid-column: 1 / span 2;
     }
+
+    .blocks__item-image--row {
+        width: 100%;
+        max-height: 400px;
+    }
+
 
 }
