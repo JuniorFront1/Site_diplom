@@ -64,8 +64,14 @@
 .contact__block-text {
     padding: 0;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 0;
+}
+
+.contact__block-mail,
+.contact__block-phone{
+    text-decoration: none;
+    color: black;
 }
 
 .contact-row {
