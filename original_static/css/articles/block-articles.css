@@ -81,6 +81,14 @@
     font-weight: 700;
 }
 
+.block__item-image{
+    width: 280px;
+    height: 200px;
+}
+
+.blocks__item-image:not(.blocks__item-image--row){
+    max-height: 230px;
+}
 
 @media (max-width: 1024px) {
     .container {

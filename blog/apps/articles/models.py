@@ -26,6 +26,10 @@ class Article(models.Model):
         other_articles = [article for article in Article.objects.all() if article.id != self.id]
         random.shuffle(other_articles)
         return other_articles
+
+    class Meta:
+        verbose_name = "Статья"
+        verbose_name_plural = "Статьи"
         
 class Comment(models.Model):
     def get_random_color():
@@ -43,3 +47,7 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.comment_name
+
+    class Meta:
+        verbose_name = "Комментарий"
+        verbose_name_plural = "Комментарии"

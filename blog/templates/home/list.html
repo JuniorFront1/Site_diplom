@@ -48,9 +48,9 @@
     const setBackgroundImage = (url)=>{
         const gradient = 'linear-gradient(rgba(255,255,255,0.9), rgba(0,0,0,0.5))';
         if(url.startsWith("https") || url.startsWith("http")){ 
-            document.querySelector("#slide1").style.backgroundImage = `${gradient}, url(${url})`;
+            document.querySelector("#slide1").style.backgroundImage = ` url(${url})`;
         }else{
-            document.querySelector("#slide1").style.backgroundImage = `${gradient}, url({%static ""%}${url})`;
+            document.querySelector("#slide1").style.backgroundImage = ` url({%static ""%}${url})`;
         }
     }
     setBackgroundImage(photos[0])
@@ -181,10 +181,10 @@
         <div class="portfolio__title">Портфолио</div>
         <div class="portfolio__text">В данном разделе присутсвуют большинство отчётов о пределанной работе, так же здесь будут размещаться актуальный фотографии на сегодняшний момент и фотографии с мест проведения работ</div>
         <div class="portfolio__blocks">
-            <div class="portfolio__blocks-item"><img src="{% static 'images/portfolio-1.jpg' %}" alt=""></div>
-            <div class="portfolio__blocks-item"><img src="{% static 'images/portfolio-1.jpg' %}" alt=""></div>
-            <div class="portfolio__blocks-item"><img src="{% static 'images/portfolio-1.jpg' %}" alt=""></div>
-            <div class="portfolio__blocks-item"><img src="{% static 'images/portfolio-1.jpg' %}" alt=""></div>
+            <div class="portfolio__blocks-item"><img class='portfolio__blocks-image' src="{% static 'images/portfolio-1.jpg' %}" alt=""></div>
+            <div class="portfolio__blocks-item"><img class='portfolio__blocks-image' src="{% static 'images/portfolio-2.jfif' %}" alt=""></div>
+            <div class="portfolio__blocks-item"><img class='portfolio__blocks-image' src="{% static 'images/portfolio-3.jpg' %}" alt=""></div>
+            <div class="portfolio__blocks-item"><img class='portfolio__blocks-image' src="{% static 'images/portfolio-4.jpg' %}" alt=""></div>
         </div>
     </div>
 </div>

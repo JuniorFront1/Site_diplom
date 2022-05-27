@@ -58,3 +58,21 @@
 .login .password-reset-link {
     text-align: center;
 }
+
+.action-links{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.helptext{
+    display: none;
+}
+
+.btn{
+    text-decoration: none;
+}
+
+.btn:hover{
+    text-decoration: underline;
+}

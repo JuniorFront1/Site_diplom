@@ -93,3 +93,8 @@ class RequestUser(models.Model):
         verbose_name='Статус заявки',
         default='1'
     )
+
+
+    class Meta:
+        verbose_name = "Заявка пользователя"
+        verbose_name_plural = "Заявки пользователей"

@@ -13,8 +13,7 @@
         <h2>Регистрация</h2>
         {% csrf_token %}
         {{form}}
-        <input type="submit" value="Регистрация">
-    
+            <input type="submit" value="Регистрация">
         <div class="action-links">
             <a class="btn btn-primary" href="{% url 'login' %}">Вернуться к авторизации</a>
             <a class="btn btn-default" href="{% url 'home:index' %}">Вернуться на главную</a>

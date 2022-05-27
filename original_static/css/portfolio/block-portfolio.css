@@ -28,25 +28,31 @@
     gap: 30px;
 }
 
-.portfolio__blocks-item img {
+.portfolio__blocks-image {
     max-width: 100%;
-    height: auto;
     vertical-align: middle;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
     .portfolio__text {
         max-width: 100%;
     }
+
     .portfolio__blocks {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(350px, 450px));
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .portfolio__container {
         margin: 0 30px;
+    }
+
+    .portfolio__blocks-image {
+        max-height: 300px;
     }
 }
 
